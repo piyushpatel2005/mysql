@@ -51,4 +51,4 @@ You can also specify host using `-h` flag.
 
 **Table of Contents**
 
-1. [SQL Languge](lessons/sql.md)
+1. [SELECT statement](lessons/select.md)
