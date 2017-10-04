@@ -53,3 +53,4 @@ You can also specify host using `-h` flag.
 
 1. [SELECT statement](lessons/select.md)
 2. [JOIN two tables](lessons/join.md)
+[INSERT, UPDATE, DELETE](modify.md)
