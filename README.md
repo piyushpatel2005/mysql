@@ -52,3 +52,4 @@ You can also specify host using `-h` flag.
 **Table of Contents**
 
 1. [SELECT statement](lessons/select.md)
+2. [JOIN two tables](lessons/join.md)
