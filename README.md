@@ -55,3 +55,4 @@ You can also specify host using `-h` flag.
 2. [JOIN two tables](lessons/join.md)
 3. [INSERT, UPDATE, DELETE](lessons/modify.md)
 4. [Aggregate functions](lessons/aggregate.md)
+5. [Subqueries](lessons/subquery.md)
