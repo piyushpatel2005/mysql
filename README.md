@@ -51,8 +51,34 @@ You can also specify host using `-h` flag.
 
 **Table of Contents**
 
-1. [SELECT statement](lessons/select.md)
-2. [JOIN two tables](lessons/join.md)
-3. [INSERT, UPDATE, DELETE](lessons/modify.md)
-4. [Aggregate functions](lessons/aggregate.md)
-5. [Subqueries](lessons/subquery.md)
+1. [SELECT statement](lessons/mysql/select.md)
+2. [JOIN two tables](lessons/mysql/join.md)
+3. [INSERT, UPDATE, DELETE](lessons/mysql/modify.md)
+4. [Aggregate functions](lessons/mysql/aggregate.md)
+5. [Subqueries](lessons/mysql/subquery.md)
+
+
+# Oracle SQL
+
+Oracle Database has 10g, 11g which stands for grid computing where multiple disks are available. 12c means cloud which can be accessed from cloud.
+
+**Data Definition Language**
+
+- will be interacting with database directly. Because of this, there will be implicit commit before and after the command. So, this is three step process. So, rollback is not possible with such statements.
+- They are usually much faster compared to other types of commands. So, TRUNCATE is faster than DELETE statement. DML statements interact with buffer. That's why they are comparatively slower.
+- Some of the DDL commands, CREATE, ALTER, TRUNCATE, RENAME, DROP, FLASHBACK, PURGE, COMMENT
+
+**Data Manipulation Language**
+
+- These are used for data structure. It first interacts with buffer. When we commit, buffer content will be loaded into database. If we rollback, the buffer content will be removed. Here, rollback is possible. These can be read (SELECT) or write (INSERT, UPDATE, DELETE, MERGE). Read operations are Data retrieval commands.
+- There will be implicit row level locks. So, other users cannot manipulate that row or record until the lock is released.
+
+**Transaction Control Language**
+
+These are used for transactions. A set of DML operations with commit or rollback is called transaction. Starting from DML to commit/rollback is called a transaction. These incldues COMMIT, ROLLBACK, SVAEPOINT (temporary saving point), SET TRANSACTION (change mode of transaction)
+
+**Data Control Language**
+
+DCL commands also interacts with Database directly. They deal with privileges only. There will be implicit commit in DCL as well. These incldues GRANT, REVOKE, SET ROLE.
+
+1. [DDL Comamnds](lessons/oracle/ddl.md)
